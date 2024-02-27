@@ -1,9 +1,10 @@
 #include <iostream>
+#include "Puntos.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    Ejercicio2();
     return 0;
 }
