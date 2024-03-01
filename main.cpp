@@ -5,6 +5,6 @@ using namespace std;
 
 int main()
 {
-    Ejercicio3();
+    Ejercicio7();
     return 0;
 }

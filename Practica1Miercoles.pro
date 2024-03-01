@@ -8,6 +8,7 @@ SOURCES += \
         Punto3.cpp \
         Punto4.cpp \
         Punto6.cpp \
+        Punto7.cpp \
         main.cpp
 
 HEADERS += \
