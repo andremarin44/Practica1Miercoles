@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        Punto16.cpp \
         Punto2.cpp \
         Punto3.cpp \
         Punto4.cpp \
