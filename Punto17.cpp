@@ -38,7 +38,7 @@ int Ejercicio17(){
         int resultado = encontrarPrimerTriangularConDivisores(k);
 
         // Salida de resultados
-        printf("El número es: %d que tiene %d divisores.\n", resultado, contarDivisores(resultado));
+        printf("El numero es: %d que tiene %d divisores.\n", resultado, contarDivisores(resultado));
 
         return 0;
 }

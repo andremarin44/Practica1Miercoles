@@ -7,7 +7,7 @@ int Ejercicio9(){
         int numero, digito, suma = 0;
 
         // Entrada de datos
-        printf("Ingrese un número entero N: ");
+        printf("Ingrese un numero entero N: ");
         scanf("%d", &numero);
 
         // Cálculo de la suma de los dígitos elevados a sí mismos

@@ -18,7 +18,7 @@ int Ejercicio12(){
         int numero;
 
         // Entrada de datos
-        printf("Ingrese un número: ");
+        printf("Ingrese un numero: ");
         scanf("%d", &numero);
 
         // Cálculo del mayor factor primo

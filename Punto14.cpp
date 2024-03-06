@@ -1,50 +1,36 @@
 #include <iostream>
-#include <stdio.h>
-
 using namespace std;
-int esPalindromo(int numero) {
-    int original = numero;
-    int invertido = 0;
 
-    while (numero > 0) {
-        invertido = invertido * 10 + numero % 10;
-        numero /= 10;
+int invertir(int n);
+
+bool esPalindromo(int n);
+
+int Ejercicio14(void){
+    int n;
+    cout << "n=";cin >>n;
+    if(esPalindromo(n)){
+        cout << " es Palindromo" << endl;
+    }else{
+        cout << "no es Palindromo" << endl;
     }
-
-    return original == invertido;
+    return 0;
 }
 
-int encontrarMayorPalindromo() {
-    int mayorPalindromo = 0;
+int invertir(int n){
+    int respuesta = 0;
 
-    for (int i = 100; i < 1000; ++i) {
-        for (int j = i; j < 1000; ++j) {
-            int producto = i * j;
-            if (producto > mayorPalindromo && esPalindromo(producto)) {
-                mayorPalindromo = producto;
-            }
-        }
+    while(n>0){
+        respuesta = respuesta + n % 10;
+        respuesta = respuesta * 10;
+        n = n/10;
     }
-
-    return mayorPalindromo;
+    return respuesta/10;
 }
 
-int Ejercicio14(){
-    // Encontrar el mayor número palíndromo
-       int resultado = encontrarMayorPalindromo();
-
-       // Descomponer en factores
-       int factor1, factor2;
-       for (int i = 100; i < 1000; ++i) {
-           if (resultado % i == 0 && resultado / i < 1000) {
-               factor1 = i;
-               factor2 = resultado / i;
-               break;
-           }
-       }
-
-       // Salida de resultados
-       printf("%d * %d = %d\n", factor1, factor2, resultado);
-
-       return 0;
+bool esPalindromo(int n){
+    if(n==invertir(n)){
+        return true;
+    }else{
+        return false;
+    }
 }

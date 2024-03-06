@@ -25,7 +25,7 @@ int Ejercicio8(){
     }
 
     // Salida de resultados
-    printf("La suma de los múltiplos de %d y %d menores a %d es: ", a, b, c);
+    printf("La suma de los multiplos de %d y %d menores a %d es: ", a, b, c);
 
     // Imprimir los múltiplos
     for (int i = 1; i < c; ++i) {

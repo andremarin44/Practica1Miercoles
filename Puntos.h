@@ -1,6 +1,6 @@
 #ifndef PUNTOS_H
 #define PUNTOS_H
 
-int Ejercicio16();
+int Ejercicio9();
 
 #endif // PUNTOS_H
